@@ -1,5 +1,5 @@
 import sys
-import logging
+from logger import logging
 
 def error_message_detail(error, error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()  #sys.exc_info function returns a 3-tuple with the exception, 
@@ -21,7 +21,7 @@ class CustomException(Exception):
     
 
 
-## test to see if the script is working properly
+# # test to see if the script is working properly
 # if __name__=="__main__":
     
 #     try:
