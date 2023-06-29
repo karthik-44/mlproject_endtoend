@@ -100,7 +100,7 @@ class DataTransformation:
             logging.info("Saved preprocessed objects.")
 
             save_object(
-                file_path = self.data_transformation_config.preprocessor_obj_file_path,
+                filepath = self.data_transformation_config.preprocessor_obj_file_path,
                 obj = preprocessor_obj
             )
 
