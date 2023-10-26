@@ -4,7 +4,7 @@ The main objective of this project is to implement a general machine learning wo
 These can be combined as a package and be deployed to any cloud environment or to pypi.  
 
 
-## creation and Activation of virtual environment
+## Creation and Activation of Virtual Environment
 ```bash
 (base) E:\mlproject_endtoend>conda create -p venv_mlee python==3.9 -y
 (base) E:\mlproject_endtoend>conda activate venv_mlee/
@@ -27,7 +27,7 @@ git remote add origin https://github.com/karthik-44/mlproject_endtoend.git
 git push -u origin main
 ```
 
-Create a .gitignore file. This doesn't track files listed in it for version tracking.  
+Create a **.gitignore** file. This doesn't track files listed in it for version tracking.  
 
 We shall periodically commit and push so that the code changes are tracked and updated to the Github repo.  
 
