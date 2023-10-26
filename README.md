@@ -96,7 +96,11 @@ A sample information that is logged into one of the files:
 ### utils.py  
 This is another important file where we can define common utility functions that can be used through out the project.  
 We shall define the functions here and call them in different scripts. This is done for better code organization and maintenance.  
-Some common utility functions are load_object, save_object(for loading and saving the python objects as pkl files) , evaluate_models(to evaluate different models)
+Some common utility functions are load_object, save_object(for loading and saving the python objects as pkl files) , evaluate_models(to evaluate different models).  
+
+### notebook
+This folder contains the python jupyter notebooks and any initial data. It is easier and intuitive to work with the notebooks for the exploratory data analysis and initial model development cycle. Once we are sure of the model workflow, we can implement the code in the notebook to different .py files for various tasks such as data ingestion, transformation, model training, prediction.  
+
 
 ### Components
 Create a folder components, this contains all the modules related to :
@@ -128,5 +132,11 @@ This file generally has the following steps implemented in it:
 ### Pipelines
 - **train_pipeline.py**: This might not be needed for us because we have implemented the model training in model_trainer.py.
 - **predict_pipeline.py**: This contains the information about the pre-processor.pkl, model.pkl file locations. We shall load them and when we pass an input data to the methods defined in this script, we shall get the predicted output from our best trained model.
+
+### app.py  
+This contains the code for web application deployment. We can configure a flask application through which the user can give the input features and we can the predicted outcome from our model response.  
+
+ Please check the contents of the individual files to get a better idea of the implementation.  
+ 
 
 
