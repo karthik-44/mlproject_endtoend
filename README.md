@@ -12,7 +12,7 @@ These can be combined as a package and be deployed to any cloud environment or t
 
 Mainly we shall use git for version controlling of the code.  
 
-## Version control  
+## Version Control  
 ```bash
 (E:\mlproject_endtoend\venv_mlee) E:\mlproject_endtoend>  
 git config --global user.email “<github_email”
@@ -39,6 +39,36 @@ Add the following files:
 pip install -r requirements.txt
 ```
 
-This installs the packages in the environment and also creates a folder called mlproject_endtoend.egg-info. (can be used to deploy the package in pypi if intended.)
+This installs the packages in the environment and also creates a folder called mlproject_endtoend.egg-info. (can be used to deploy the package in pypi if intended.)  
 
+Now we shall create a folder **src** where we work most of the time for our machine learning project. The **src** folder structure is generally of the following structure: 
+```bash
+src
+ ┣ components
+ ┃ ┣ __pycache__
+ ┃ ┃ ┣ data_transformation.cpython-39.pyc
+ ┃ ┃ ┣ model_trainer.cpython-39.pyc
+ ┃ ┃ ┗ __init__.cpython-39.pyc
+ ┃ ┣ data_ingestion.py
+ ┃ ┣ data_transformation.py
+ ┃ ┣ model_trainer.py
+ ┃ ┗ __init__.py
+ ┣ pipeline
+ ┃ ┣ __pycache__
+ ┃ ┃ ┣ predict_pipeline.cpython-39.pyc
+ ┃ ┃ ┣ predict_pipeline_krish.cpython-39.pyc
+ ┃ ┃ ┗ __init__.cpython-39.pyc
+ ┃ ┣ predict_pipeline.py
+ ┃ ┣ train_pipeline.py
+ ┃ ┗ __init__.py
+ ┣ __pycache__
+ ┃ ┣ exception.cpython-39.pyc
+ ┃ ┣ logger.cpython-39.pyc
+ ┃ ┣ utils.cpython-39.pyc
+ ┃ ┗ __init__.cpython-39.pyc
+ ┣ exception.py
+ ┣ logger.py
+ ┣ utils.py
+ ┗ __init__.py
 
+```
